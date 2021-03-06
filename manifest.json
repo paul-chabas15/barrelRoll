@@ -1,0 +1,22 @@
+{
+  "name": "Barrel Roll",
+  "version": "1.0",
+  "manifest_version": 2,
+  "description": "The ultimate tool to boost your earnings on Freebitco.in faucet",
+  "icons": {
+    "128": "128.png"
+  },
+  "permissions": [
+    "tabs",
+    "cookies",
+    "*://freebitco.in/*"
+  ],
+  "content_scripts": [
+    {
+
+      "matches": ["*://freebitco.in/*"],
+      "js": ["js/script.js"],
+      "run_at": "document_end"
+    }
+  ]
+}
